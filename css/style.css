@@ -1,5 +1,22 @@
 .navbar-light {background-color:#fff;}
 a,a:hover {color: #333;}
-.sidebar{height: 100%;position: fixed;background-color:#e9ecef}
-.time {bottom:3px; right:3px}
-.wp-comment-stars{bottom:3px; left:3px}
+.sidebar{background-color:#e9ecef;}
+.time {bottom:5px; right:5px}
+.wp-comment-stars{bottom:5px; left:5px}
+
+
+
+.video-block>div{width:320px; max-width:100%}
+@media (min-width: 576px){
+.video-block>div{width:240px; max-width:100%}
+}
+
+#sidebar.mobact {
+	display: block !important;
+    width: 250px;
+    position: fixed;
+    top: auto;
+    height: 100vh;
+    z-index: 999;
+}
+
