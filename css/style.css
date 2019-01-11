@@ -1,6 +1,6 @@
 .navbar-light {background-color:#fff;}
 a,a:hover {color: #333;}
-.sidebar{background-color:#e9ecef;}
+.sidebar{background-color:#e9ecef;height: 100vh;}
 .time {bottom:5px; right:5px}
 .wp-comment-stars{bottom:5px; left:5px}
 
