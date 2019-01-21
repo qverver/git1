@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Custom styles for this template -->	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dist/plyr.css">
+    <title>Git1</title>
+  </head>
+  <body>
+<nav class="navbar navbar-light sticky-top flex-md-nowrap p-0">
+	<div class="col-12 col-md-3 text-center text-md-left">
+	<button class="btn d-none d-lg-inline p-0" type="button" id="sidebarCollapse"><span class="navbar-toggler-icon"></span></button>	
+	<button class="btn d-inline d-lg-none p-0" type="button" id="sidebarCollapse2"><span class="navbar-toggler-icon"></span></button>	
+	<a class="navbar-brand ml-2 p-0" href="/"><img src="images/logo.png" alt="logo" width="100px"></a> 
+	</div>
+	<div class="col-12 col-md-4">
+		<form class="d-flex justify-content-center" >
+			<input class="form-control form-control-light col-6 col-md-8 rounded-left" type="text" placeholder="Введите запрос" aria-label="Введите запрос">
+			<button class="btn btn-outline-secondary rounded-right"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3" focusable="false" role="img"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg></button>
+		</form>
+  </div>
+  <div class="col-12 d-md-none">
+     <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active " href="/">
+			  Главная 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 1
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 2
+            </a>
+          </li>	  
+        </ul>
+    </nav>   
+  </div>
+  <div class="col-12 col-md-4">
+  <ul class="nav d-flex justify-content-center justify-content-md-end">
+    <li class="nav-item">
+      <a class="nav-link px-1" href="#"><span class="navbar-toggler-icon"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-1" href="#"><span class="navbar-toggler-icon"></span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link px-1" href="#"><span class="navbar-toggler-icon"></span></a>
+    </li>
+  </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row bg-light">
+     <nav class="text-align-center col-lg-2 sidebar d-none d-lg-block px-3 pt-3" id="sidebar">
+        <ul class="nav navbar-nav d-none d-md-block border-bottom pb-2 mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">
+			  Главная 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 1
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 2
+            </a>
+          </li>
+		</ul>
+		<ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 3
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 4
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 5
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 6
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 7
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Категория 8
+            </a>
+          </li>		  
+        </ul>
+    </nav> 
+  
+
+
+	<main role="main" id="main" class="col-lg-6 ml-sm-auto pt-3">
+		<h1 class="h3">Заголовок видео короткий</h1>
+			<div class="justify-content-center">
+				<video controls crossorigin playsinline poster="images/320x240.png" id="player">
+                <!-- Video files -->
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
+
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+            </video>
+		</div>
+    </main>
+	
+		<div class="row justify-content-center justify-content-sm-start pt-3 col-lg-4 ml-sm-auto  bg-dark">
+			<div class="video-block video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html" title="Заголовок видео">Заголовок видео очень длинный заголовок просто ппц</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+			<div class="video-block col-auto col-md-6 mb-1">
+				<div>
+					<div class="position-relative">
+						<a href="inner.html">
+							<div class="time rounded px-2 position-absolute text-light bg-dark">13:42</div>
+							<div class="wp-comment-stars position-absolute rounded  px-2">
+								<span class="wp-stars">
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="1"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star" data-color="#ff9800" data-star="2"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_half" data-color="#ff9800" data-star="3"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z" fill="#ff9800"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="4"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+									<span class="wp-star" data-origin="star_o" data-color="#ccc" data-star="5"  data-hover=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10" height="10" viewBox="0 0 1792 1792"><path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z" fill="#ccc"></path></svg></span>
+								</span>
+							</div>								
+							<img src="images/320x240.png" class="img-fluid rounded"  alt="">							
+						</a>
+					</div>
+					<div>
+						<h3 class="h6"><a href="inner.html">Заголовок видео</a></h3>
+						<div class="date d-inline rounded px-2"><small>10.01.2019</small></div>
+					</div>				
+				</div>
+			</div>
+
+
+		</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  </div>
+</div>  
+<div class="overlay"></div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+        <!-- Plyr core script -->
+        <script src="dist/plyr.js" crossorigin="anonymous"></script>
+        <script src="dist/demo.js?2" crossorigin="anonymous"></script>	
+  </body>
+</html>
