@@ -20,3 +20,5 @@ a,a:hover {color: #333;}
 .pagination a{color:#333}
 .pagination a:hover{color:#333;}
 .page-item.active .page-link {background-color: #333;border-color: #333;}
+
+video{max-width:100%}
